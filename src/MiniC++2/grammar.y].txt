@@ -1,0 +1,52 @@
+%{
+#include "stdio.h"
+/*************** Includes and Defines *****************************/
+#define YYDEBUG 1        /* get the pretty debugging code to compile*/
+#define YYSTYPE  char *  /* interface with flex: should be in header file */
+%}
+
+/*************** Token Definitions *****************************/                               
+%token CHAR           EXTERN                     
+%token CONST          DEFINE           ELSE           BREAK
+%token UNDEF	      FOR             TYPEDEF_ID          VOID
+%token DOUBLE         INT            INCLUDE          RETURN
+%token DO             IF              STATIC          WHILE
+%token STRING_CONST	  INTEGER_CONST	DOUBLE_CONST	CHARACTER_CONST							
+
+/* object oriented tokens */
+%token NEW             DELETE
+%token THIS
+%token OPERATOR
+%token CLASS
+%token PUBLIC          PROTECTED       PRIVATE
+%token VIRTUAL         FRIEND			INLINE
+         
+/* const tokens */
+%token IDENTIFIER              STRING_CONST
+%token DOUBLE_CONST        INTEGER_CONST        CHARACTER_CONST
+
+/* New Lexical element, whereas ANSI C suggested non-terminal */
+%token TYPEDEF_ID
+
+/* Multi-Character operators */
+%token  ARROW            /*    ->                              */
+%token  ICR DECR         /*    ++      --                      */
+%token  LE GE EQ NE      /*    <=      >=      ==      !=      */
+%token  ANDAND OROR      /*    &&      ||                      */
+%token  CLCL             /*    ::                              */
+
+%start program
+
+%%
+
+program :	prog_decls
+	;
+	
+prog_decls :	/* empty */
+	|	prog_decls declaration
+	|	prog_decls error
+	;
+
+declaration:
+	
+	;

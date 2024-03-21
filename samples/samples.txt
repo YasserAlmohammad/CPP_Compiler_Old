@@ -1,0 +1,24 @@
+samples must contain:
+   error examples:		
+	- type conversion errors
+	- private access examples
+	- syntax errors
+	- warning example
+	- most common side example
+	- return type examples
+	- break, continue example
+	- function redifinition example
+	- variable redifinition example
+	- warnings	
+	- division by const zero
+  correct code examples:
+	- functions, recurisive, factorial
+	- misc: loops, break, while, if...
+	- arrays
+	- OOP multiple inheritance
+	- stack
+	- arranged binary tree
+	- sort algoithim over linked list
+	- optimization examples
+
+	

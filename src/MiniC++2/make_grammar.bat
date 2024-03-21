@@ -1,0 +1,1 @@
+bison -d -minic++.y -o minic++.cpp

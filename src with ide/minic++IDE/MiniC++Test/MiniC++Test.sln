@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 7.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MiniC++Test", "MiniC++Test.vcproj", "{88DFACB4-551A-4FCA-9244-A2F9D2231C77}"
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		ConfigName.0 = Debug
+		ConfigName.1 = Release
+	EndGlobalSection
+	GlobalSection(ProjectDependencies) = postSolution
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{88DFACB4-551A-4FCA-9244-A2F9D2231C77}.Debug.ActiveCfg = Debug|Win32
+		{88DFACB4-551A-4FCA-9244-A2F9D2231C77}.Debug.Build.0 = Debug|Win32
+		{88DFACB4-551A-4FCA-9244-A2F9D2231C77}.Release.ActiveCfg = Release|Win32
+		{88DFACB4-551A-4FCA-9244-A2F9D2231C77}.Release.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

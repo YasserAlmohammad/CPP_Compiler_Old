@@ -1,0 +1,56 @@
+pushi 0
+pushi 3
+storeg 0
+start
+pusha main_METHOD_
+call
+stop
+f_METHOD_:
+pushf 0.0
+pushi 0
+pushl -1
+storel 0
+pushl -2
+storel 1
+pushs "function passed args="
+writes
+pushl 1
+writei
+pushl 0
+writef
+pushl 1
+storel -3
+return
+return
+fact_METHOD_:
+pushi 0
+pushl -1
+storel 0
+pushl 0
+pushi 1
+INFEQ
+jz endif0
+pushi 1
+storel -2
+return
+endif0:
+pushl 0
+pushi 0
+pushl 0
+pushi 1
+sub
+pusha fact_METHOD_
+call
+pop 1
+mul
+storel -2
+return
+return
+main_METHOD_:
+alloc 0
+alloc 1
+dup 1
+pushi 1
+store 0
+storel 0
+return

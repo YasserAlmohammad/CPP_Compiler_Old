@@ -1,0 +1,14 @@
+alloc 0
+start
+pushi 0
+pusha _Function_main_2
+call
+pushs "main exit with code:"
+writes
+writei
+stop
+_Function_main_2:
+pushi 0
+storel -1
+return
+return
